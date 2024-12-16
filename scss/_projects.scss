@@ -1,0 +1,38 @@
+@use"./variable" as *;
+.section__container {
+  max-width: $maxwidth;
+  margin: auto;
+  padding: 5rem 1rem;
+}
+
+
+.project__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 5rem;
+}
+.project__card {
+  display: grid;
+  place-content: center;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.project__card img {
+  transition: scale 0.3s;
+}
+
+.project__card:hover img {
+  scale: 1.1;
+}
+
+@media (max-width: 640px) {
+  .project__grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+}
+
+  

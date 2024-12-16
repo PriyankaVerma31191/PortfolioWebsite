@@ -1,0 +1,35 @@
+@use"sass:math";
+@use"./variable" as *;
+@use"./mixins" as *;
+.container{
+    width: 100%;
+    max-width: $maxwidth;
+    padding-left: $padding;
+    padding-right: $padding;
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@each  $key, $value in $breakpoints {
+    @if $key == xlg{
+        @media(min-width: $value)
+        {
+           @include columns($key); 
+        }
+
+    }
+    @else {
+        @media(max-width: $value) {
+           @include columns($key);
+
+        }
+
+
+        
+    }
+}

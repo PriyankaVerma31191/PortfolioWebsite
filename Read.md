@@ -1,0 +1,3 @@
+Welcome to my portfolio! Here, I showcase my journey as a Salesforce Consultant and Salesforce Administrator. With over 3 years of experience in the Salesforce ecosystem, I specialize in leveraging Salesforce to optimize business operations, automate workflows, and provide insights that empower organizations. Through continuous learning and practical application, I strive to help businesses achieve their goals using Salesforce’s robust suite of tools.
+
+In this portfolio, I will walk you through my professional experience, certifications, and the skills I’ve developed along the way. I hope this gives you a clear picture of my expertise and how I can contribute to future opportunities.

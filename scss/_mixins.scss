@@ -1,0 +1,40 @@
+@use"sass:math";
+@use"./variable" as *;
+@mixin responsive($screen){
+
+    @if $screen == lg {
+        @media (max-width:map-get($breakpoints,"lg")){
+            @content;
+        }
+    }@else if $screen == md {
+            @media (max-width: map-get($breakpoints, "md")){
+                @content;
+            }
+
+        } @else if $screen == sm {
+            @media(max-width: map-get($breakpoints, "sm") ){
+                @content;
+                
+            }
+        } @else if $screen == xsm {
+            @media (max-width: map-get($breakpoints, "xsm")){
+                @content;
+            }
+        }
+    }
+    @mixin flexbox ($justify-content, $align-items) {
+        display: flex;
+        justify-content: $justify-content;
+        align-items: $align-items;}
+
+        
+        @mixin columns($key){
+            @for $i from 1 through 12{
+                .col-#{$key}-#{$i} {
+                    flex-basis: math.div(100%, 12) * $i ;
+                    max-width: math.div(100%, 12) * $i;
+        
+                }
+            }
+        
+        } 
