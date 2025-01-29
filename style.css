@@ -1,32 +1,20 @@
 .education {
   padding: 8rem 0;
 }
-.education--row1 [class^=col-]:nth-child(2) {
-  transform: skewY(8deg);
-}
 @media (max-width: 1200px) {
   .education--row1 [class^=col-]:nth-child(2) {
     transform: none;
   }
-}
-.education--row1 [class^=col-]:nth-child(4) {
-  transform: skewY(8deg);
 }
 @media (max-width: 1200px) {
   .education--row1 [class^=col-]:nth-child(4) {
     transform: none;
   }
 }
-.education--row2 [class^=col-]:nth-child(1) {
-  transform: skewY(-8deg);
-}
 @media (max-width: 1200px) {
   .education--row2 [class^=col-]:nth-child(1) {
     transform: none;
   }
-}
-.education--row2 [class^=col-]:nth-child(3) {
-  transform: skewY(-8deg);
 }
 @media (max-width: 1200px) {
   .education--row2 [class^=col-]:nth-child(3) {
@@ -34,6 +22,7 @@
   }
 }
 .education__card {
+  height: 272px;
   width: 100%;
   background: linear-gradient(110deg, #fff 80%, #4b5563 5%);
   padding: 1.5rem;
@@ -376,6 +365,8 @@
 
 .project__card img {
   transition: scale 0.3s;
+  height: 250px;
+  margin-top: 20px;
 }
 
 .project__card:hover img {
@@ -388,6 +379,10 @@
     gap: 2rem;
   }
 }
+a {
+  text-align: center;
+}
+
 .certificates__contents {
   width: 80%;
 }

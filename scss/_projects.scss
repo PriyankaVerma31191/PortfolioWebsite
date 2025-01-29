@@ -22,6 +22,8 @@
 
 .project__card img {
   transition: scale 0.3s;
+  height: 250px;
+  margin-top: 20px;
 }
 
 .project__card:hover img {
@@ -34,5 +36,8 @@
   gap: 2rem;
 }
 }
-
+ 
+a{
+  text-align: center;
+}
   
